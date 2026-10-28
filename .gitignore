@@ -1,0 +1,22 @@
+
+# 編譯產物
+*.exe
+*.o
+*.obj
+*.out
+*.dll
+*.so
+*.a
+*.lib
+
+# CMake 建置目錄
+build/
+cmake-build-*/
+
+# VS Code 暫存與工作區設定
+.vscode/
+!.vscode/extensions.json
+
+# 系統產生的檔案
+.DS_Store
+Thumbs.db

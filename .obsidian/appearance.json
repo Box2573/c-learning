@@ -1,0 +1,10 @@
+{
+  "theme": "obsidian",
+  "cssTheme": "Blue Topaz",
+  "accentColor": "",
+  "baseFontSize": 17,
+  "interfaceFontFamily": "更紗黑體 TC,等距更紗黑體 TC",
+  "enabledCssSnippets": [
+    "custom"
+  ]
+}

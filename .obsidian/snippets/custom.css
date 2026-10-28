@@ -1,0 +1,6 @@
+/*圖片並排顯示*/
+.image-compare
+ {
+  display: flex;
+  gap: 20px;
+}
