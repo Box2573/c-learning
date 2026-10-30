@@ -8,7 +8,7 @@ Cat::Cat(std::string catName)://建構子
 
 void Cat::eat()
 {
-    decreaseHungry(20);
+    decreaseHungry(30);
 }
 
 std::string Cat::getPetType() const 
