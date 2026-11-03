@@ -8,20 +8,49 @@
         "type": "tabs",
         "children": [
           {
-            "id": "33bda68135bfc4da",
+            "id": "f4343b46058706f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01Knowledge/Build Tools/標頭檔和多個檔案用指令編譯以及運作方式.md",
+                "file": "01Knowledge/Build Tools/CMake.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "標頭檔和多個檔案用指令編譯以及運作方式"
+              "title": "CMake"
+            }
+          },
+          {
+            "id": "64d65daeb3facb85",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01Knowledge/Build Tools/vscode c++設定.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "vscode c++設定"
+            }
+          },
+          {
+            "id": "9e23345f1523f30d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01Knowledge/Game Development/Fundamentals/歐拉積分，讓電腦模擬現實的運動.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "歐拉積分，讓電腦模擬現實的運動"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -201,54 +230,54 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "33bda68135bfc4da",
+  "active": "64d65daeb3facb85",
   "lastOpenFiles": [
-    "project/2d game/src/Player/Player.hpp",
-    "project/2d game/src/Player/player.cpp",
-    "project/2d game/src/Player",
-    "01Knowledge/Build Tools/vscode c++設定.md",
-    "01Knowledge/Build Tools/CMake.md",
-    "01Knowledge/Build Tools/標頭檔和多個檔案用指令編譯以及運作方式.md",
-    "project/2d game/src/player.cpp",
-    "01Knowledge/C++ Concepts/一些名詞解釋(類別、物件、變數、方法、建構子、、指標).md",
-    "README.md",
-    "project/2d game/src/Player.hpp",
-    "01Knowledge/C++ Concepts/Template模板.md",
-    "project/2d game/guide/交接用.md",
-    "01Knowledge/Game Development/SFML/繪製視窗.md",
+    "project/2d game/build/CMakeFiles/Progress/1",
     "project/2d game/build/CMakeFiles/Progress/83",
     "project/2d game/build/CMakeFiles/Progress/82",
     "project/2d game/build/CMakeFiles/Progress/81",
     "project/2d game/build/CMakeFiles/Progress/80",
     "project/2d game/build/CMakeFiles/Progress/79",
     "project/2d game/build/CMakeFiles/Progress/68",
-    "project/2DGAME~1/build/_deps/sfml-src/examples/android/app/src/main/res/drawable-mdpi/sfml_logo.png",
-    "project/2DGAME~1/build/_deps/sfml-src/examples/android/app/src/main/res/drawable-xxhdpi/sfml_logo.png",
-    "project/2DGAME~1/build/_deps/sfml-src/examples/android/app/src/main/res/drawable-hdpi/sfml_logo.png",
-    "project/2DGAME~1/build/_deps/sfml-src/examples/android/app/src/main/res/drawable-xhdpi/sfml_logo.png",
-    "project/2DGAME~1/build/_deps/sfml-src/examples/android/app/src/main/res/drawable-ldpi/sfml_logo.png",
-    "project/2DGAME~1/build/_deps/sfml-src/examples/android/app/src/main/assets/image.png",
-    "project/2DGAME~1/build/_deps/harfbuzz-src/test/vector/data/expected/basic/ttb.svg",
-    "project/2DGAME~1/build/_deps/harfbuzz-src/test/vector/data/expected/basic/upem-default.svg",
-    "project/2DGAME~1/build/_deps/harfbuzz-src/test/vector/data/expected/basic/iran-nastaliq-y-offsets.svg",
-    "project/2DGAME~1/build/_deps/harfbuzz-src/test/vector/data/expected/basic/handwriting-sbix.svg",
-    "project/2DGAME~1/build/_deps/harfbuzz-src/test/shape/data/text-rendering-tests/fonts/Selawik-README.md",
-    "project/2DGAME~1/build/_deps/sfml-src/examples/text/resources/readme.md",
-    "project/2DGAME~1/build/_deps/mbedtls-src/docs/architecture/testing/driver-interface-test-strategy.md",
-    "project/2DGAME~1/build/_deps/mbedtls-src/docs/architecture/testing/invasive-testing.md",
-    "project/2DGAME~1/build/_deps/mbedtls-src/docs/architecture/testing/test-framework.md",
-    "project/2DGAME~1/build/_deps/mbedtls-src/docs/architecture/testing/psa-storage-format-testing.md",
-    "project/2DGAME~1/build/_deps/mbedtls-src/docs/architecture/psa-migration/transition-guards.md",
-    "project/2DGAME~1/build/_deps/mbedtls-src/docs/architecture/psa-migration/testing.md",
-    "project/2DGAME~1/build/_deps/mbedtls-src/docs/architecture/psa-thread-safety/psa-thread-safety.md",
-    "project/2DGAME~1/build/_deps/mbedtls-src/docs/architecture/psa-migration/strategy.md",
-    "project/2DGAME~1/build/_deps/mbedtls-src/docs/architecture/psa-migration/psa-limitations.md",
-    "project/2DGAME~1/build/_deps/mbedtls-src/docs/architecture/psa-migration/psa-legacy-bridges.md",
-    "project/2DGAME~1/build/_deps/mbedtls-src/3rdparty/p256-m/p256-m/README.md",
-    "project/2DGAME~1/build/_deps/mbedtls-src/docs/architecture/psa-migration/md-cipher-dispatch.md",
-    "project/2DGAME~1/build/_deps/freetype-src/subprojects/dlg/docs/todo.md",
-    "project/2DGAME~1/build/_deps/freetype-src/subprojects/dlg/docs/notes.md",
-    "project/2DGAME~1/build/_deps/freetype-src/subprojects/dlg/docs/changelog.md",
+    "project/2d game/build/CMakeFiles/Progress/67",
+    "project/2d game/build/CMakeFiles/Progress/66",
+    "project/2d game/build/CMakeFiles/Progress/65",
+    "project/2d game/build/CMakeFiles/Progress/64",
+    "Attachments/Pasted image 20261103211702.png",
+    "Attachments/Pasted image 20261103210801.png",
+    "Attachments/Pasted image 20261103210227.png",
+    "Attachments/Pasted image 20261103205759.png",
+    "01Knowledge/Build Tools/CMake.md",
+    "01Knowledge/Build Tools/vscode c++設定.md",
+    "01Knowledge/Build Tools/標頭檔和多個檔案用指令編譯以及運作方式.md",
+    "01Knowledge/Game Development/SFML/繪製視窗.md",
+    "01Knowledge/Game Development/SFML/簡單介紹與安裝.md",
+    "project/2d game/guide/C++ 2D 沙盒遊戲專案 — 完整開發、學習進度與教學模式交接.md",
+    "project/2d game/guide/交接用.md",
+    "README.md",
+    "01Knowledge/C++ Concepts/傳值、傳址、傳參考.md",
+    "project/2d game/design thinking/Player設計.md",
+    "project/build/_deps/ogg-src/doc/white-ogg.png",
+    "project/build/_deps/ogg-src/doc/white-xifish.png",
+    "project/build/_deps/ogg-src/doc/vorbisword2.png",
+    "project/build/_deps/ogg-src/doc/stream.png",
+    "project/build/_deps/ogg-src/doc/pages.png",
+    "project/build/_deps/ogg-src/doc/pages.svg",
+    "project/build/_deps/ogg-src/README.md",
+    "project/build/_deps/mbedtls-src/docs/architecture/testing/test-framework.md",
+    "project/build/_deps/mbedtls-src/docs/architecture/testing/psa-storage-format-testing.md",
+    "project/build/_deps/mbedtls-src/docs/architecture/testing/invasive-testing.md",
+    "project/build/_deps/mbedtls-src/docs/architecture/testing/driver-interface-test-strategy.md",
+    "project/build/_deps/mbedtls-src/docs/architecture/psa-thread-safety/psa-thread-safety.md",
+    "project/build/_deps/mbedtls-src/docs/architecture/psa-migration/strategy.md",
+    "project/build/_deps/mbedtls-src/docs/architecture/psa-migration/transition-guards.md",
+    "project/build/_deps/mbedtls-src/docs/architecture/psa-migration/testing.md",
+    "project/build/_deps/mbedtls-src/docs/architecture/psa-migration/psa-legacy-bridges.md",
+    "project/build/_deps/mbedtls-src/docs/architecture/psa-migration/psa-limitations.md",
+    "project/build/_deps/mbedtls-src/docs/architecture/psa-migration/md-cipher-dispatch.md",
+    "project/build/_deps/mbedtls-src/docs/proposed/psa-driver-interface.md",
+    "project/build/_deps/mbedtls-src/docs/proposed/psa-driver-integration-guide.md",
+    "project/build/_deps/mbedtls-src/docs/proposed/psa-driver-wrappers-codegen-migration-guide.md",
     "未命名.canvas"
   ]
 }

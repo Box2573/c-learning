@@ -32,6 +32,14 @@ add_executable(pet
 )//產生一個叫做 pet.exe的程式，而這個程式是由後面這 5 個 `.cpp` 檔案組合
 
 ```
+- 如果標頭檔放在不同地方，編譯時顯示include找不到可以再include加上路徑名或是加上標頭檔位置資料夾
+	- 例如我的標頭檔放在src的player資料夾下
+	- 或自己手動打上路徑`#include "player/Player.hpp"`
+```c++
+target_include_directories(CppSandbox PRIVATE
+    src/Player
+)
+```
 - build方法
 	- `-S .`：**Source（原始碼位置）**。告訴 CMake，我的 `CMakeLists.txt` 就在當前這個資料夾（`.` 代表目前路徑）
 	- -  `-B build`：**Build（輸出的產物位置）**。告訴 CMake，把所有產生的暫存檔、Makefile 通通丟進一個叫做 `build` 的資料夾。**如果這個資料夾不存在，CMake 會自動幫你建立！**

@@ -22,6 +22,7 @@ FetchContent_MakeAvailable(SFML)
 
 add_executable(CppSandbox
     src/main.cpp
+    src/Player/player.cpp
 )
 
 target_link_libraries(CppSandbox PRIVATE SFML::Graphics)
