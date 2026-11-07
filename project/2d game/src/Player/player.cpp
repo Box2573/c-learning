@@ -13,22 +13,32 @@ Player::Player(float x, float y, float w, float h):
         return health;
     }
 
-    void Player::update()
+    void Player::update(float deltaTime)
     {
         //jump
-        //外面還要先檢查是否按下跳躍鍵
         //判斷是否在地上
         if(isGround())
         {
-            //在地上觸發跳躍
-           jump();
+            //避免穿過地板和歸0速度
+            Player::y =  Player::groundY -  Player::height;
+            Player::velocityY = 0;
+
+            //先檢查是否按下跳躍鍵
+            //觸發跳躍
+            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space))
+            {
+                std::cout << "Jump!\n";
+                jump();
+            }
         }
         else//不在地上，表示在空中一直扣掉重力
         {
-            Player::velocityY += Player::gravity;//sfml往下是+y因此+重力
+            //這一幀因為重力而新增的速度 = 加速度 * delta time
+            //不乘delta time會導致可能fps很高會導致重力被加很多次
+            Player::velocityY += Player::gravity *deltaTime;//sfml往下是+y因此+重力
         }
-        //更新位置
-      
+        //更新位置，這一幀實際上走過的距離 = 速度*delta time
+        Player::y += Player::velocityY * deltaTime;
     }
 
     void Player::jump()
@@ -47,9 +57,8 @@ Player::Player(float x, float y, float w, float h):
         health -= damage;
     }
 
-    bool Player::isGround()
+    bool Player::isGround() const
     {
-        //這裡還沒實作先回傳true
         return Player::y + Player::height >= Player::groundY;
     }
 

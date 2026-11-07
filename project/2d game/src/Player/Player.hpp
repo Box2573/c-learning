@@ -14,8 +14,8 @@ class Player
         const float speed = 0.3f;
 
         //跳躍相關
-        const float jumpVelocity = 0.5f;
-        const float gravity = 9.8f;
+        const float jumpVelocity = -700.f;//sfml y朝上是負的
+        const float gravity = 2000.f;
         
         float velocityY = 0.f;
 
@@ -26,11 +26,17 @@ class Player
         Player(float x, float y, float w, float h);
 
         float getHealth() const;
+        void getAttacked(float damage);
+
+        //movement
         void jump();
         void move();
-        void getAttacked(float damage);
-        bool isGround();
-        void update();
+        
+        //physics
+        bool isGround() const;
+        void update(float deltaTime);
+
+        //render
         void drawPlayer(sf::RenderWindow& window, sf::Color playerColor) const;
 
 
