@@ -11,7 +11,7 @@ class Player
         float health = 5;
 
         //移動相關
-        const float speed = 0.3f;
+        const float moveSpeed = 100.f;
 
         //跳躍相關
         const float jumpVelocity = -700.f;//sfml y朝上是負的

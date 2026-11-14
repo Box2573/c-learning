@@ -15,6 +15,7 @@ Player::Player(float x, float y, float w, float h):
 
     void Player::update(float deltaTime)
     {
+        #pragma region Jump
         //jump
         //判斷是否在地上
         if(isGround())
@@ -39,12 +40,25 @@ Player::Player(float x, float y, float w, float h):
         }
         //更新位置，這一幀實際上走過的距離 = 速度*delta time
         Player::y += Player::velocityY * deltaTime;
+        #pragma endregion
+
+        #pragma region Move
+        float horizontal = 0.f;//移動方向
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A))//按下往左
+            horizontal -= 1.f;
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D))//按下往右
+             horizontal += 1.f;
+
+        //現在距離 = 現在距離 + 移動距離，  移動距離 = 方向 * 速度 * 時間
+        Player::x += horizontal * Player::moveSpeed * deltaTime;
+
+        #pragma endregion
+
     }
 
     void Player::jump()
     {
         //jump
-        //外面還要先檢查是否按下跳躍鍵
          Player::velocityY = Player::jumpVelocity;
         
     }
