@@ -18,6 +18,12 @@ FetchContent_Declare(
     GIT_SHALLOW TRUE
 )
 
+if(UNIX)
+    message(STATUS "Building for Linux")
+    set(SFML_BUILD_NETWORK OFF CACHE BOOL "" FORCE)
+endif()
+
+
 FetchContent_MakeAvailable(SFML)
 
 add_executable(CppSandbox

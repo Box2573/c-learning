@@ -89,6 +89,7 @@ cmake --build build
 	- 例如我只希望linux不要用network功能
 ```c++
 if(UNIX)
+	message(STATUS "Building for Linux")
     set(SFML_BUILD_NETWORK OFF CACHE BOOL "" FORCE)
 endif()
 
