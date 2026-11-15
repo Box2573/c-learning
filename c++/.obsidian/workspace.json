@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01Knowledge/Game Development/Fundamentals/資料與實例分離.md",
+                "file": "01Knowledge/Build Tools/CMake.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "資料與實例分離"
+              "title": "CMake"
             }
           }
         ]
@@ -176,8 +176,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           }
         ],
@@ -203,6 +203,10 @@
   },
   "active": "c056af06178901bb",
   "lastOpenFiles": [
+    "01Knowledge/Game Development/SFML/簡單介紹與安裝.md",
+    "01Knowledge/Build Tools/CMake.md",
+    "01Knowledge/Build Tools/vscode c++設定.md",
+    "01Knowledge/Game Development/Fundamentals/資料與實例分離.md",
     "Attachments/Pasted image 20261114201341.png",
     "01Knowledge/C++ Concepts/if else與獨立if的選擇.md",
     "01Knowledge/C++ Concepts/enum class vs enum.md",
@@ -213,7 +217,6 @@
     "01Knowledge/C++ Concepts/建立物件與智慧指標.md",
     "01Knowledge/C++ Concepts/使用static_cast轉變型態.md",
     "01Knowledge/C++ Concepts/struct vs class.md",
-    "01Knowledge/Game Development/Fundamentals/資料與實例分離.md",
     "01Knowledge/Data Structures & Algorithms/unordered_set.md",
     "01Knowledge/Game Development/Fundamentals/跳躍的實現.md",
     "01Knowledge/Game Development/Fundamentals/移動的實現.md",
@@ -227,7 +230,6 @@
     "01Knowledge/C++ Concepts/物件的擁有關係（Ownership）.md",
     "01Knowledge/C++ Concepts/存取權限.md",
     "project/build/_deps/libssh2-src/docs/libssh2_sftp_mkdir_ex.md",
-    "01Knowledge/Build Tools/vscode c++設定.md",
     "project/2d game/build/CMakeFiles/Progress/1",
     "project/2d game/build/CMakeFiles/Progress/83",
     "project/2d game/build/CMakeFiles/Progress/82",
@@ -242,13 +244,11 @@
     "Attachments/Pasted image 20261103210801.png",
     "Attachments/Pasted image 20261103210227.png",
     "Attachments/Pasted image 20261103205759.png",
-    "01Knowledge/Build Tools/CMake.md",
     "project/build/_deps/ogg-src/doc/white-ogg.png",
     "project/build/_deps/ogg-src/doc/white-xifish.png",
     "project/build/_deps/ogg-src/doc/vorbisword2.png",
     "project/build/_deps/ogg-src/doc/stream.png",
     "project/build/_deps/ogg-src/doc/pages.png",
-    "project/build/_deps/ogg-src/doc/pages.svg",
     "未命名.canvas"
   ]
 }

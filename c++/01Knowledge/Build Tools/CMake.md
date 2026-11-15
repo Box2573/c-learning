@@ -74,14 +74,31 @@ cmake --build build -j 4   //用j簡寫
 - 執行了`cmake -S . -B build -G "MinGW Makefiles"`後可以看成他已經寫好了一套規則，因此修改了cpp只需再跑一次bulid`cmake --build build`，mingw32-make 會去檢查所有檔案的修改時間，判斷哪些工作需要重新執行
 - 如果修改`CMakeLists.txt`也不用跑`cmake -S . -B build -G "MinGW Makefiles"`一樣跑`cmake --build build`即可他如果自己發現`CMakeLists`改過他會自己先跑cmake -S那個一次
 
+## linux版本
+- mingw可以看成是給windows用的, linux 本身帶有g++標準工具會自動使用`unix makefile`因此直接用
+```c++
+cmake -S . -B build
+```
+- build一樣用一樣可以加核心數
+```c++
+cmake --build build
+```
 
+## 區分windows版本和linux版本
+-  有的東西我只想再配置windows啟用有的則是linux才用可以加入if去判斷在linux就關掉
+	- 例如我只希望linux不要用network功能
+```c++
+if(UNIX)
+    set(SFML_BUILD_NETWORK OFF CACHE BOOL "" FORCE)
+endif()
 
+FetchContent_MakeAvailable(sfml)
+```
+- 甚至在build的時候在資料夾名稱後面加入windows或linux分開兩個配置
+```c++
+# Windows
+cmake -S . -B build-windows
 
-
-
-
-
-
-
-
-
+# Linux
+cmake -S . -B build-linux
+```
