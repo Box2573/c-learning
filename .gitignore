@@ -20,3 +20,6 @@ cmake-build-*/
 # 系統產生的檔案
 .DS_Store
 Thumbs.db
+
+#我用來測試的檔案
+test*.cpp

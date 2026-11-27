@@ -6,5 +6,6 @@
   "interfaceFontFamily": "更紗黑體 TC,等距更紗黑體 TC",
   "enabledCssSnippets": [
     "custom"
-  ]
+  ],
+  "showRibbon": true
 }

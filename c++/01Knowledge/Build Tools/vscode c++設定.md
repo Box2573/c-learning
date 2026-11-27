@@ -59,18 +59,20 @@
 
 ### launch.json
 - 這個不用自己打一樣可以讓他自己產生一份再修改
-	- 按下f5選擇`(gdb) Launch`就會產生一份launch.json
-![[Pasted image 20261103205759.png|600]]
-- 再來應該會跳出錯誤說什麼沒有launch.json04開啟後他又會叫你選一次，一樣選gdb
+- 直接去左邊的Run and Debug點擊`create a launch.json file`產生一份launch.json
+- 再來他會叫你選除錯器，選擇`C++ (GDB/LLDB)`
 	- 因為環境是 MinGW GCC，使用 GDB 作為除錯器
-	- 再來他應該會會建立 `launch.json`，並放入一份 C++ GDB 的基本除錯設定
  ![[Pasted image 20261103210227.png|600]]
- - 打開launch會發現建立的東西很少，此時可以去左邊的run and debug選擇create a launch.json她會跳到 launch.json並且可以選擇把gdb的設定帶入，再選擇launch那個
+ - 再來他應該會產生`launch.json`並要你選擇自動要生成的內容選
+	 - 選擇 `選擇launch那個
 ![[Pasted image 20261103210801.png]]
+- 如果launch.json已經存在但沒有內容，一樣去左邊的Run and Debug點擊`create a launch.json file`他應該就會跳出要你選自動要生成的內容
 - 有改的地方
 	- name：除錯設定的名稱，方便自己辨識改為`Run 2D Game`
 	- program：要執行哪個程式，改為我們編譯出來的exe
+		- 如果要通用只指定資料夾用`${fileDirname}\\${fileBasenameNoExtension}.exe`task.json也是如此
 	- cwd：一樣程式執行時的工作目錄
+		- 通用用`"${fileDirname}"`
 	- miDebuggerPath：GDB 的位置
 - 新增的地方
 	- `"preLaunchTask": "Build 2D Game"`在啟動 GDB 和執行遊戲之前，先執行指定的 Task，這裡的Build 2D Game要跟task.json的label名稱一樣，意思就是再執行前先執行task.json

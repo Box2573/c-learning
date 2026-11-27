@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "85793070c0dcc804",
+        "id": "98862acfaf59ab28",
         "type": "tabs",
         "children": [
           {
-            "id": "c056af06178901bb",
+            "id": "2cb9e227905b428c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01Knowledge/Build Tools/CMake.md",
+                "file": "01Knowledge/Data Structures & Algorithms/Linked List：Singly 、Doubly Linked List.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CMake"
+              "title": "Linked List：Singly 、Doubly Linked List"
+            }
+          },
+          {
+            "id": "f08e69ce381cc004",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01Knowledge/C++ Concepts/cin例外處理.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "cin例外處理"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -55,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#include",
+                "query": "tag:#includede",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -63,7 +78,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "搜尋"
             }
           },
           {
@@ -201,35 +216,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c056af06178901bb",
+  "active": "f08e69ce381cc004",
   "lastOpenFiles": [
-    "01Knowledge/Game Development/SFML/簡單介紹與安裝.md",
-    "01Knowledge/Build Tools/CMake.md",
+    "01Knowledge/C++ Concepts/一些名詞解釋(類別、物件、變數、方法、建構子、、指標).md",
+    "01Knowledge/Data Structures & Algorithms/Linked List：Singly 、Doubly Linked List.md",
+    "01Knowledge/Build Tools/vscode更改 c++版本.md",
+    "01Knowledge/C++ Concepts/cout 與 format.md",
     "01Knowledge/Build Tools/vscode c++設定.md",
+    "01Knowledge/Build Tools/CMake.md",
+    "01Knowledge/C++ Concepts/Object Lifetime.md",
+    "01Knowledge/C++ Concepts/移動、複製(物件、所有權)和Move的使用.md",
+    "01Knowledge/C++ Concepts/資料結構",
+    "01Knowledge/C++ Concepts/建立物件與智慧指標.md",
+    "01Knowledge/C++ Concepts/繼承與類別外定義與多型與抽象類別.md",
+    "01Knowledge/C++ Concepts/物件的擁有關係（Ownership）.md",
+    "01Knowledge/C++ Concepts/RAII.md",
+    "01Knowledge/C++ Concepts/為什麼不引入namespace std.md",
+    "01Knowledge/C++ Concepts/(虛擬)解構子.md",
+    "01Knowledge/C++ Concepts/存取權限.md",
+    "01Knowledge/C++ Concepts/傳值、傳址、傳參考.md",
+    "design pattern template.md",
+    "01Knowledge/C++ Concepts/容器的比較.md",
+    "01Knowledge/Data Structures & Algorithms/雜湊表Hash table.md",
+    "01Knowledge/Game Development/SFML/簡單介紹與安裝.md",
     "01Knowledge/Game Development/Fundamentals/資料與實例分離.md",
     "Attachments/Pasted image 20261114201341.png",
     "01Knowledge/C++ Concepts/if else與獨立if的選擇.md",
     "01Knowledge/C++ Concepts/enum class vs enum.md",
     "01Knowledge/C++ Concepts/cin例外處理.md",
-    "01Knowledge/C++ Concepts/繼承與類別外定義與多型與抽象類別.md",
-    "01Knowledge/C++ Concepts/傳值、傳址、傳參考.md",
-    "01Knowledge/C++ Concepts/為什麼不引入namespace std.md",
-    "01Knowledge/C++ Concepts/建立物件與智慧指標.md",
     "01Knowledge/C++ Concepts/使用static_cast轉變型態.md",
     "01Knowledge/C++ Concepts/struct vs class.md",
-    "01Knowledge/Data Structures & Algorithms/unordered_set.md",
-    "01Knowledge/Game Development/Fundamentals/跳躍的實現.md",
-    "01Knowledge/Game Development/Fundamentals/移動的實現.md",
-    "01Knowledge/Game Development/Fundamentals/delta time的實現與使用時機.md",
-    "00 Home/Templates/template.md",
-    "00 Home/可用的語法.md",
-    "01Knowledge/C++ Concepts/Template模板.md",
-    "README.md",
-    "design pattern template.md",
-    "01Knowledge/Game Development/Fundamentals/歐拉積分，讓電腦模擬現實的運動.md",
-    "01Knowledge/C++ Concepts/物件的擁有關係（Ownership）.md",
-    "01Knowledge/C++ Concepts/存取權限.md",
-    "project/build/_deps/libssh2-src/docs/libssh2_sftp_mkdir_ex.md",
     "project/2d game/build/CMakeFiles/Progress/1",
     "project/2d game/build/CMakeFiles/Progress/83",
     "project/2d game/build/CMakeFiles/Progress/82",
@@ -239,7 +255,6 @@
     "project/2d game/build/CMakeFiles/Progress/68",
     "project/2d game/build/CMakeFiles/Progress/67",
     "project/2d game/build/CMakeFiles/Progress/66",
-    "project/2d game/build/CMakeFiles/Progress/65",
     "Attachments/Pasted image 20261103211702.png",
     "Attachments/Pasted image 20261103210801.png",
     "Attachments/Pasted image 20261103210227.png",
