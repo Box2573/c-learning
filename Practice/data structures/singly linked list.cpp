@@ -17,8 +17,8 @@ class TasksList
         TODO
         addTask()在尾端新增任務 [o]
         displayTasks()顯示所有任務[o]
-        findTask()根據 ID 搜尋任務[]
-        completeTask(id)將指定任務標記為完成[]
+        findTask()根據 ID 搜尋任務[o]
+        completeTask(id)更改指定任務的completed[o]
         insertTaskAfter(id)在指定任務後面插入新任務[]
         deleteTask(id)刪除指定任務[]
     */
@@ -29,18 +29,27 @@ class TasksList
     public:
         TasksList()
         {
-            tail = head;
+            tail = head;//初始化tail指向head
         }
         ~TasksList()
         {
             //delete pointers
             delete head;
+
+            Tasks *next = head -> next;
+            while (next != nullptr)
+            {
+                Tasks *temp = next;
+                next = next -> next;
+                delete temp;     
+            }
+
         }
 
         void addTasks(std::string titleNam)
         {
             //新增任務, id採自動增加
-            tail -> next = new Tasks(tail -> id + 1, titleNam, false, nullptr);
+            tail -> next = new Tasks{tail -> id + 1, titleNam, false, nullptr};
             //把當前任務變成新增的那個
             tail = tail->next;
         }
@@ -68,7 +77,7 @@ class TasksList
                 if(next -> id == id)
                 {
                    std::cout << std::format(
-                    "以找到任務: id: {}, task name: {}, completed: {}\n", next -> id, next -> title, next -> completed
+                    "已找到任務: id: {}, task name: {}, completed: {}\n", next -> id, next -> title, next -> completed
                     );
 
                     return;
@@ -83,6 +92,50 @@ class TasksList
 
         }
 
+        void completeTask(int id)
+        {
+            Tasks *next = head -> next;
+
+            while (next != nullptr)
+            {
+                if(next -> id == id)
+                {
+                    next -> completed = !(next -> completed);
+
+                   std::cout << std::format(
+                     "已把任務{} 狀態改為{}", next -> title, next -> completed ? "true" : "false"
+                    );
+
+                    return;
+                }
+                else
+                {
+                    next = next -> next;
+                }
+            }   
+
+            std::cout << "該任務不存在\n";
+        }
+
+        void insertTaskAfter(int id, std::string titleNam)
+        {
+            Tasks *next = head -> next;
+
+            while (next != nullptr)
+            {
+                if(next -> id == id)
+                {
+                    Tasks *temp = next;
+                    next -> next = new Tasks{next->id + 1, titleNam, false, temp -> next};
+                }
+                else
+                {
+                    next = next -> next;
+                }
+            }
+
+            std::cout << "該任務不存在\n";
+        }
 };
 
 int main()
@@ -95,7 +148,7 @@ int main()
     while(true)
     {
         std::cout << std::format(
-            "輸入要執行的行為\n"
+            "\n輸入要執行的行為\n"
             "0.新增任務\n"
             "1.顯示所有任務\n"
             "2.透過id找任務\n"
@@ -131,7 +184,13 @@ int main()
                 break;
             }
             case 3: //completeTask
+            {
+                int id;
+                std::cout << "輸入任務id: ";
+                std::cin >> id;
+                tasksList.completeTask(id);
                 break;
+            }
             case 4: //insert
                 break;
             case 5: //delete

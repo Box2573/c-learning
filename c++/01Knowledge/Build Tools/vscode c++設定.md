@@ -121,3 +121,11 @@
 
 - 再按下f5就有我們命名的可以選了但我不知道為什麼有兩份，反正都有prelaunch有救是先編譯再執行應該都可以
 ![[Pasted image 20261103211702.png]]
+
+### c_cpp_properties
+- 用來告訴vscode我要的c++版本之類的沒有告訴他即使你編譯的g++版本正確但vscode還是會一直畫紅線報錯
+- 使用ctrl+shift+p開啟command palette選擇
+- `C/C++: Edit Configurations (UI)`
+- 他會開啟設定的ui頁面,設定完後他會自動生成一份c_cpp_properties
+![[Pasted image 20261128084047.png]]
+

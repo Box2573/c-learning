@@ -26,7 +26,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
     "${fileDirname}/${fileBasenameNoExtension}.exe"
 ]
 ```
-- 改好後vscdoe可能還是會靶心版函式庫內容標示成錯誤或是無法正常完整補全
+- 改好後vscdoe可能還是會 把新版函式庫內容標示成錯誤或是無法正常完整補全
 - 因為也要告訴vscode我們要用的版本
 - 修改`c_cpp_properties.json`在`"configurations"`加入`"cppStandard": "c++23"`
 ```c++
